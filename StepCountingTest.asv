@@ -2,7 +2,7 @@ Parameters_h;
 onRead = 1;
 
 % 1 is PTM, 2 is STFT, 3 is FSM, 4 is DWT, 5 is DWT2
-setMethod = 1;
+setMethod = 5;
 
 if onRead == 1
     ReadStepData;
@@ -55,7 +55,7 @@ Num = sum(gTruth);
 xFP = x/Num;
 yTP = y/Num;
 figure, plot(xFP(xFP<0.1),yTP(xFP<0.1),'-bo');
-xlabel('False positive rate');
-ylabel('True positive rate');
+xlabel('False positive');
+ylabel('Tru
 
 
