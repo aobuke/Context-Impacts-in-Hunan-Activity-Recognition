@@ -41,7 +41,7 @@ for thr =  thresholds
     fpN = [];
     for i = 1:54
         if (stepData{i}.inf.pl ~= WATCH)&&(stepData{i}.inf.pl ~= UPOC) % only for Group I.
-            [gTruth(i), tpN(i), fpN(i)] = StepCalcPTM(stepData{i},thr,2, method, para);
+            [gTruth(i), tpN(i), fpN(i)] = StepCalc(stepData{i},thr,2, method, para);
         end
     end
     TPN(index) = sum(tpN);

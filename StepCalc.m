@@ -1,4 +1,4 @@
-function [stepNum, tpN, fpN] = StepCalcPTM(input, threshold, mode, method, para )
+function [stepNum, tpN, fpN] = StepCalc(input, threshold, mode, method, para )
 MAG = @(x) sqrt(sum(x.^2,2));
 
 onFIG = 0;
